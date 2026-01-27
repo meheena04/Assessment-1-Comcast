@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: linear-gradient(to bottom right, #973bc5, #2d0241);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+.card {
+    background-color: #f6edf3;
+    border-radius: 22px;
+    padding: 40px;
+    margin: 30px;
+}
+
+.hero {
+    min-height: 520px;
+}
+
+
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    font-family: "Gloock";
+    margin-bottom: 40px;
+}
+
+.navii {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #4a2a5c;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.navii::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #5d2c71;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.2s ease;
+}
+
+.navii:hover {
+    transform: translateY(-1px);
+}
+
+.navii:hover::after {
+    width: 100%;
+}
+
+
+.sider {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 10px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-family: "Libre Bodoni";
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+}
+
+.namehigh {
+    font-family: "Merriweather";
+    color: #5d2c71;
+    letter-spacing: 1px;
+}
+
+
+.abt {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.abt p {
+    background: rgba(93, 44, 113, 0.1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+.below-title {
+    max-width: 520px;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: "Merriweather";
+    margin-top: 10px;
+}
+
+
+.overlap {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.overlap {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.me,
+.purp1,
+.purp2 {
+    position: absolute;
+}
+
+.me {
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 28% 72% 46% 54% / 36% 34% 66% 64%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.purp1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #542467;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    top: -1px;
+    left: -1px;
+    opacity: 0.35;
+    z-index: 1;
+}
+
+.purp2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #9142b0;
+    border-radius: 30% 70% 60% 40% / 50% 60% 40% 50%;
+    bottom: -1px;
+    right: -1px;
+    opacity: 0.35;
+    z-index: 2;
+}
+
+
+.divider {
+    width: 1000px;
+    height: 2px;              
+    background-color: #5d2c71;
+    margin: 16px auto;        
+    border-radius: 2px;
+    justify-content: center;
+    
+
+}
+
+.proj-title{
+    font-family: "Libre Bodoni";
+    font-size: 56px;
+    line-height: 2;
+    padding-left: 25px;
+}
+
+.proj-sections{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.pro-sec{
+    background-color: #9f64b7;
+    font-family: Merriweather;
+    font-size: 20px;
+    color: #f6edf3;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.headproj{
+    font-family: "Gloock";
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #22142b;
+}
+
+.img1{
+    border-radius: 13px;
+    max-width: 60%;
+    display: block;
+    max-height: 100%;
+    margin-top: 20px;
+}
+
+.img2{
+    border-radius: 13px;
+    max-width: 80%;
+    display: block;
+    max-height: 100%;
+    margin: 30px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.imgr{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.hackathon-sec{
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.contacts{
+    background-color: #9f64b7;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.contact-head{
+    font-family: "Gloock";
+    font-size: 50pts;
+    letter-spacing: 2px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.hero-contacts{
+    background-color: #9f64b7;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.contact-containers{
+    font-family: "Libre Bodoni";
+    font-size: 60pts;
+    color: #f6edf3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Squada {
+    font-family: "Squada One";
+    letter-spacing: 2px;
+}
+
+.Gloock {
+    font-family: "Gloock";
+}
+
+.Redhat {
+    font-family: "Red Hat Display";
+}
+
+.cherry {
+    font-family: "Cherry Cream Soda";
+}
+
+.alan {
+    font-family: "Alan Sans";
+}
+
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+    .card {
+        padding: 20px;
+        margin: 14px;
+    }
+    .navii {
+        font-size: 12px;
+    }    
+    .name {
+        font-size: 34px;
+    }
+
+    .abt p {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .below-title {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    
+    .overlap {
+        width: 260px;
+        height: 260px;
+    }
+
+    .me {
+        width: 180px;
+        height: 220px;
+    }
+
+    .purp1,
+    .purp2 {
+        width: 180px;
+        height: 180px;
+    }
+
+    
+    .proj-title {
+        font-size: 32px;
+    }
+
+    .pro-sec {
+        font-size: 14px;
+    }
+
+    .headproj {
+        font-size: 18px;
+    }
+
+   
+    .img1 {
+        max-width: 90%;
+    }
+
+   
+    .contacts {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .contact-head {
+        font-size: 32px;
+    }
+    .divider {
+    width: 1000px;
+    height: 2px;              
+    background-color: #5d2c71;
+    margin: 10px auto;        
+    border-radius: 2px;
+    justify-content: center;
+    
+
+}
+}

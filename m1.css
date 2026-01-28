@@ -373,7 +373,7 @@ body {
 
    
     .contacts {
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
         padding: 20px 0;
     }
@@ -382,7 +382,7 @@ body {
         font-size: 32px;
     }
     .divider {
-    width: 1000px;
+    width: 400px;
     height: 2px;              
     background-color: #5d2c71;
     margin: 10px auto;        
